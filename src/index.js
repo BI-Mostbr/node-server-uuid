@@ -1,7 +1,7 @@
 const express = require('express');
 const https = require('https');
 const fs = require('fs');
-const crypto = require('crypto');
+const { v4: uuidv4 } = require('uuid');
 const cors = require('cors');
 
 const app = express(); // Inicializa o Express
@@ -30,7 +30,7 @@ app.use(express.json());
 
 // Definição de rotas
 app.get('/uuid', (req, res) => {
-    const uuid = crypto.randomUUID();
+    const uuid = uuidv4();
     res.status(200).json({ uuid });
 });
 
