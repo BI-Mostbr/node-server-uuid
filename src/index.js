@@ -13,7 +13,7 @@ const ca = fs.readFileSync('/etc/letsencrypt/archive/mostbr.com.br.server-node.m
 
 // Configuração do CORS
 const corsOptions = {
-    origin: ['https://app.flutterflow.io', 'https://app.mostbr.com.br'],
+    origin: ['https://app.flutterflow.io', 'https://app.mostbr.com.br', 'https://sistema-m-o-s-t-veayjp.flutterflow.app/'],
     optionsSuccessStatus: 200
 };
 
